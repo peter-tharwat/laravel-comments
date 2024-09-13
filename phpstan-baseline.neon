@@ -1,0 +1,42 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Anonymous function has an unused use \\$prefix\\.$#"
+			count: 1
+			path: src/CommentsServiceProvider.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:participatingCommentators\\(\\)\\.$#"
+			count: 1
+			path: src/Jobs/SendNotificationsForApprovedCommentJob.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:subscribers\\(\\)\\.$#"
+			count: 2
+			path: src/Jobs/SendNotificationsForApprovedCommentJob.php
+
+		-
+			message: "#^Call to an undefined method Spatie\\\\Comments\\\\Models\\\\Concerns\\\\Interfaces\\\\CanComment\\:\\:is\\(\\)\\.$#"
+			count: 1
+			path: src/Jobs/SendNotificationsForApprovedCommentJob.php
+
+		-
+			message: "#^PHPDoc tag @var for variable \\$commentable has invalid type Spatie\\\\Comments\\\\Models\\\\Concerns\\\\HasComments\\.$#"
+			count: 1
+			path: src/Jobs/SendNotificationsForApprovedCommentJob.php
+
+		-
+			message: "#^Variable \\$commentable in PHPDoc tag @var does not exist\\.$#"
+			count: 1
+			path: src/Jobs/SendNotificationsForApprovedCommentJob.php
+
+		-
+			message: "#^Negated boolean expression is always false\\.$#"
+			count: 1
+			path: src/Models/Comment.php
+
+		-
+			message: "#^Using nullsafe property access on non\\-nullable type Spatie\\\\Comments\\\\Models\\\\Comment\\. Use \\-\\> instead\\.$#"
+			count: 1
+			path: src/Models/Comment.php
+
